@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="LimpaCssBrowser.css">
+    <link rel="stylesheet" href="sytles.css">
+    <title>Portfólio Pessoal</title>
+</head>
+<body>
+    <header>
+        <!-- Criei uma função em JavaScript para controlar os links clicados -->
+        <ul class="container-head">
+            <li class="item-head"> <a href="#sobre-mim" onclick="mostraSecao('sobre-mim')">Sobre mim</a></li>
+            <li class="item-head"> <a href="#formacao" onclick="mostraSecao('formacao')">Formação</a></li>
+            <li class="item-head"><a href="#portfolio" onclick="mostraSecao('portfolio')">Portfólio</a></li>
+            <li class="item-head"> <a href="#contato"  onclick="mostraSecao('contato')">Contato</a></li>
+        </ul>
+        <hr style="background-color: goldenrod; height: 2px;">
+    </header>
+
+    <div class="boasVindas">
+        <h1  style="text-align: center; font-size: 30px; margin-bottom: 5px;">Seja bem-vindo ao meu portfólio!</h1>
+        <h2 style="text-align: center;">Entre nos links acima para saber mais</h2>
+    </div>
+    <main class="display-none">
+        <section id="sobre-mim">
+            <h1>Sobre Mim</h1>
+            <p>Olá, meu nome é João Rhasseller Alves da Silva, tenho 24 anos, sou de Curitiba, Paraná. </p>
+            <p>Meus hobbies favoritos são: ler livros, assistir séries, e principalmente jogar vídeo game 
+             recentemente comprei um Play Station 5, então estou aproveitando bastante, jogando Ghost of Tsushima.
+             Sobre livros, minha namorada comprou o box Duna primeira triologia um livro considerado clássico; saiu
+             até filme sobre. Único problema é que não estou tendo muito tempo para ler o livro; pois o trabalho vem exigindo bastante 
+             estudos; eu trabalho em uma empresa chamada EGS Sistemas; sou desenvolvedor .NET back-end; e atuo na parte do ERP da empresa 
+             criando api's para o front consumir; por isso venho lendo bastante livros técnicos como : Apps and Services with .NET 8 e 
+             C# 12 and .NET 8 - Modern Cross-Platform Development Fundamentals. Além de atuar no back-end eu as vezes quando preciso dou uma
+             ajuda na parte do Front-End, embora não seja muito bom no front ainda; consigo dar uma mão ao pessoal; pessoal usa na parte de criação de interface 
+             o framework Angular.js; embora esteja em desuso pela mercado, ainda é uma tecnologia simples para ser usada.
+             Enfim venho me aprimorando mais na parte do back-end usando liguagem C# e ecossistema .NET, pois é área de atuação onde tenho maior prazer de atuar; Único 
+             problema que no trabalho usamos .NET Framework na qual trata-se uma teconoloiga voltada apenas para windows; hoje tá temos o .NET 8; na qual é Open-Source e ainda 
+             pode-se utilizada tanto no Linux quanto no MacOs, e o melhor de tudo é que posso fazer aplicativos de computador, celular e micro-serviços para ambiente nuvem; tudo isso
+            com apenas 1 único ecossistema chamado .NET 
+            </p>
+            <p>Enfim isso foi um pouco sobre mim, que estão acotecendo atualmente na minha vida agora.</p>
+        </section>
+
+        <section id="formacao">
+            <h1>Formação Educacional</h1>
+             <p>Sou formado como desenvolvedor de sistemas pelo Serviço Nacional de Aprendizagem Industrial - SENAI, em 2022.</p>
+             <p>Atualmente estou estudando análise e desenvolvimento de sistema pela Uninter.</p>
+             <h1>Idiomas</h1>
+             <p>Consigo falar inglês avançado; venho estudando desdê 2014, tenho certificado Intermediário pela CNA em 2018; contudo me considero avançado hoje em dia.
+             </p>
+        </section>
+        <section id="portfolio">
+            <h1>Portfólio</h1>
+            <p>Confira meus projetos no GitHub
+                <a style="float: right; cursor: pointer; margin: 10px;" href="https://github.com/joaorhasseller">
+                    <img src="gitHub.jpg" alt="" srcset=""  width="300" height="250">
+                </a>
+            </p>
+            <p style="font-style: italic;">Observação: São projetos antigos e não estão mais atualizados
+            </p>
+            <p>Princiapl projeto meu é site de venda de automóvel, segue link: <a href="https://github.com/joaorhasseller/Concessionaria" target="_blank" style="font-weight: bolder;">Concessionaria</a></p>
+            <p>Há também diversos outros projetos, contudo ressalto que são antigos e não atualizos eles já a bastante tempo; aluns projetos irão estar em PHP e outros a maioria serão 
+                com C#; <span style="text-decoration: underline;">Clique na imagem ao lado para ver meu repositório</span>
+            </p>
+           
+
+        </section>
+
+        <section id="contato">
+            <h1>Entre em Contato</h1>
+            <form action="dadosEnviados.html" style="padding: 20px; width: 45%;"  >
+             <label for="nome">Nome:</label>
+             <br>
+             <input type="text" name="nome">
+             <br>
+             <label for="email">Email:</label>
+             <br>
+             <input type="email" name="email">
+             <br>
+             <label for="nome">Deixe sua Mensgem:</label>
+             <br>
+             <textarea name="nome" id=""></textarea>
+             <br>
+             <input type="submit" value="Enviar" style="width: 100%;" class="btnEnviar">
+            </form>
+            <p></p>
+        </section>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
